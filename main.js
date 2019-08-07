@@ -39,6 +39,15 @@ function removeTodo(i) {
 }
 
 // 1. Now let's write a function to add to our list, complete with an event listener to run it when our add function is run. Grab the user's input and add it to your data and to the dom!
+function addToList() {
+  let inputBox = document.querySelector(".todo-input");
+  let addButton = document.querySelector(".add-todo");
+  addButton.onclick = function() {
+    createTodo(inputBox.value);
+    printTodo(inputBox.value);
+  };
+}
+addToList();
 
 // 1. Let's write some new helper functions for our mark complete feature. The first takes in a number and marks the matching todo complete in our data.
 
