@@ -50,6 +50,14 @@ function addToList() {
 addToList();
 
 // 1. Let's write some new helper functions for our mark complete feature. The first takes in a number and marks the matching todo complete in our data.
+function completeTodo(number) {
+  for(let i = 0; i < todos.length; i++) {
+    // console.log(number, i)
+    if (number === i + 1) {
+    todos[i][1] = true;
+    }
+  }
+}
 
 // 1. Now write a helper function that, given a number, marks the equivalent`li` complete.I recommend a line through the text, but apply any other or additional css you want.There area few ways to use the number you're given to find the `li` you want to mark; I recommend an `nth-child()` selector.
 
