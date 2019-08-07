@@ -32,6 +32,11 @@ function createTodo(name) {
 }
 
 // 1. Write the equivalent helper function to * remove * one item from the array(s).
+function removeTodo(i) {
+  if (Number(i)) {
+    let removed = todos.splice(i, 1);
+  }
+}
 
 // 1. Now let's write a function to add to our list, complete with an event listener to run it when our add function is run. Grab the user's input and add it to your data and to the dom!
 
